@@ -140,12 +140,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectStr.cpp" />
     <ClCompile Include="Hash.cpp" />
     <ClCompile Include="HashTable.cpp" />
+    <ClCompile Include="HashTableStr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectStr.h" />
     <ClInclude Include="HashTable.h" />
+    <ClInclude Include="HashTableStr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
