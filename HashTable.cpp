@@ -46,5 +46,15 @@ GameObject* HashTable::Find(int key)
 
 GameObject* HashTable::Delete(int key)
 {
-
+    int hash = HashFunction(key);
+    while (data[hash] != NULL) {
+        if (data[hash]->key == key) {
+            GameObject* temp = data[hash];
+            data[hash] = NULL;
+            return temp;
+        }
+        ++hash;
+        hash %= size;
+    }
+    return NULL;
 }

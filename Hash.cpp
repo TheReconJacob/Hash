@@ -16,11 +16,13 @@ int main()
 
     table->Display();
 
-    GameObject* result = table->Find(30);
+    GameObject* result = table->Delete(30);
     if (result != NULL)
-        std::cout << "Key: " << result->key << ", Name: " << result->name << std::endl;
+        std::cout << "The following has been deleted - Key: " << result->key << ", Name: " << result->name << std::endl;
     else
         std::cout << "GameObject not found." << std::endl;
+
+    table->Display();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
